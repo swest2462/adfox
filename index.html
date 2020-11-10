@@ -21,4 +21,30 @@
 
 <h2> header </h2>
 <p> text </p>
+
+<div></div>
+<script type="text/javascript">
+    %global.pixel%
+
+        (function() {
+            var _pr1 = %random1% ,
+                _width = ('%banner.width%'.indexOf('%') != -1 ? '%banner.width%' : parseInt('%banner.width%') + 'px'),
+                _reference = '%request.reference%',
+                _html = '<a href="' + _reference + '" target="%banner.target%">' +
+                '<img src="%banner.image_url%" alt="%banner.alt%" style="width: 100%; height: auto; vertical-align: middle; border: 0px;">' +
+                '</a>';
+
+            if (_pr1) {
+                setTimeout(function() {
+                    document.close();
+                }, 100);
+                parent.document.getElementById('AdFox_banner_' + _pr1).innerHTML = _html;
+                parent.document.getElementById('AdFox_banner_' + _pr1).style.width = _width;
+                parent.document.getElementById('AdFox_banner_' + _pr1).style.margin = '0 auto';
+            } else {
+                document.write('<div style="width: ' + _width + ';">' + _html + '</div>');
+            }
+        })();
+</script>
+
 <footer>text in footer</footer>
