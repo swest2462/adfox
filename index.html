@@ -6331,11 +6331,11 @@ Flashpoint
     });
 </script>
 
-
 <script type="text/javascript">
     $(document).ready(function () {
         $('.mobile-banner__close').on('click', function (e) {
         e.preventDefault();
+        console.log(e);
         $(this).closest('.footer-banner__wrapper').remove();
       });
     })
