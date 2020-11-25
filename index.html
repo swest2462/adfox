@@ -6397,13 +6397,6 @@ Flashpoint
 
 
 <script type="text/javascript">
-    
-    $('.mobile-banner__close').on('click', function () {
-        $(this).closest('div').remove();
-    });
-</script>
-
-<script type="text/javascript">
 	var yaMetrika = {
         refsClientIds: {"1xstavka":"subid","liga-stavok":"aid","pari-match-ru":"c","winline":"subid"},
 		counterId: intelYaCounterId,
@@ -6499,6 +6492,11 @@ Flashpoint
     }
 
     $(function() {
+
+        $('.mobile-banner__close').on('click', function () {
+        $(this).closest('div').remove();
+    });
+
         if((siteLocale == 'kk' && geoCountry == 'RU') || window.location.hash == '#iamvisitorfromru'){
             return;
         }
