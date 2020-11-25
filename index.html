@@ -67,6 +67,13 @@
             siteLocale = 'ru',
             geoAllowed = true;
     </script>
+
+<script>
+    $('.mobile-banner__close').on('click', function (e) {
+    e.preventDefault();
+    $(this).closest('.mobile-banner__wrapper').remove();
+  });
+</script>
 <script src="https://web.legalcdn.org/assets/LB-LB-250/scripts/jquery.documentReady.js"></script>
 <script src="https://yastatic.net/pcode/adfox/loader.js" crossorigin="anonymous"></script>
 </head>
@@ -6310,19 +6317,24 @@ Flashpoint
 <!--Площадка: github / * / *-->
 <!--Тип баннера: 1920х80-->
 <!--Расположение: <низ страницы>-->
-<div id="adfox_160519257102457297">
-</div>
+<div id="adfox_160519257102457297" class="mobile-banner__wrapper">
+  <a class="mobile-banner__close" href="">
+    <i class="icon icon-close"></i>
+  </a>
+
 <script>
-    window.Ya.adfoxCode.create({
-        ownerId: 367324,
-        containerId: 'adfox_160519257102457297',
-        params: {
-            pp: 'i',
-            ps: 'elyi',
-            p2: 'gzyu'
-        }
-    });
-</script>
+        window.Ya.adfoxCode.create({
+            ownerId: 367324,
+            containerId: 'adfox_160519257102457297',
+            params: {
+                pp: 'i',
+                ps: 'elyi',
+                p2: 'gzyu'
+            }
+        });
+    </script>
+</div>
+
 <div class="to-top-side"></div>
 <div class="cookie-modal" id="gdrp-bottom-message">
 <div class="cookie-modal__block">
