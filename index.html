@@ -6315,7 +6315,7 @@ Flashpoint
 <!--Расположение: <низ страницы>-->
 <div id="adfox_160519257102457297" class="footer-banner__wrapper">
   <span class="mobile-banner__close">
-    <i class="mobile-banner__close-icon icon icon-close"></i>
+    <i class="mobile-banner__close icon icon-close"></i>
   </span>
 </div>
 
@@ -6607,9 +6607,10 @@ Flashpoint
 <script defer src="https://web.legalcdn.org/assets/LB-LB-250/scripts/index.js"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"5f6915d39ad62313","r":1,"version":"2020.11.6","si":10}'></script>
 
-<script defer type="text/javascript">
+<script type="text/javascript">
 $('.mobile-banner__close').on('click', function (e) {
         e.preventDefault();
+        console.log(e.currentTarget);
         alert('down');
         $(this).closest('.footer-banner__wrapper').remove();
     });
