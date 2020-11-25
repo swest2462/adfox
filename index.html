@@ -6343,7 +6343,7 @@ Flashpoint
 <script src="https://web.legalcdn.org/assets/LB-LB-1451/scripts/gdrp-accept.js"></script>
 
 
-<script defer src="https://web.legalcdn.org/assets/LB-LB-1451/js/jquery-3.5.1.min.js"></script>
+<script src="https://web.legalcdn.org/assets/LB-LB-1451/js/jquery-3.5.1.min.js"></script>
 <!-- <script defer src="/adfox/js/close.js"></script> -->
 <script defer src="https://web.legalcdn.org/assets/LB-LB-250/js/jquery-ui-1.10.4.custom.min.js"></script>
 <script defer src="https://web.legalcdn.org/assets/LB-LB-250/scripts/lazy/jquery.lazy.min.js"></script>
@@ -6397,6 +6397,10 @@ Flashpoint
 
 
 <script type="text/javascript">
+    $('.mobile-banner__close').on('click', function () {
+        $(this).closest('div').remove();
+    });
+
 	var yaMetrika = {
         refsClientIds: {"1xstavka":"subid","liga-stavok":"aid","pari-match-ru":"c","winline":"subid"},
 		counterId: intelYaCounterId,
@@ -6493,9 +6497,7 @@ Flashpoint
 
     $(function() {
 
-        $('.mobile-banner__close').on('click', function () {
-        $(this).closest('div').remove();
-    });
+        
 
         if((siteLocale == 'kk' && geoCountry == 'RU') || window.location.hash == '#iamvisitorfromru'){
             return;
