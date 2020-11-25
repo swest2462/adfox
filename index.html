@@ -69,6 +69,7 @@
     </script>
 
 
+
 <script src="https://web.legalcdn.org/assets/LB-LB-250/scripts/jquery.documentReady.js"></script>
 <script src="https://yastatic.net/pcode/adfox/loader.js" crossorigin="anonymous"></script>
 </head>
@@ -6392,6 +6393,13 @@ Flashpoint
 <script defer src="https://web.legalcdn.org/assets/LB-BRB2432-2/js/check-ref-block.js"></script>
 <script defer src="https://web.legalcdn.org/assets/LB-LB-1610/scripts/video.js"></script>
 <script defer src="https://web.legalcdn.org/assets/LB-LB-1610/js/book/not-partners-popup.js"></script>
+<script type="text/javascript">
+    $('.mobile-banner__close').on('click', function (e) {
+        e.preventDefault();
+        $(this).closest('.mobile-banner__wrapper').remove();
+      });
+</script>
+
 <script type="text/javascript">
 	var yaMetrika = {
         refsClientIds: {"1xstavka":"subid","liga-stavok":"aid","pari-match-ru":"c","winline":"subid"},
