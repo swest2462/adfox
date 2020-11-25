@@ -6315,7 +6315,7 @@ Flashpoint
 <!--Расположение: <низ страницы>-->
 <div id="adfox_160519257102457297" class="footer-banner__wrapper">
   <span class="mobile-banner__close">
-    <i class="icon icon-close" onclick="closeBanner(e)"></i>
+    <i class="icon icon-close" onclick="closeBanner()"></i>
   </span>
 </div>
 
@@ -6399,7 +6399,8 @@ Flashpoint
 <script type="text/javascript">
     function closeBanner(e) {
         console.log('function start');
-        console.log(e.currentTarget.parentTarget);
+        console.log(e);
+        console.log(e.currentTarget);
         $(this).closest('.footer-banner__wrapper').remove();
     }
 </script>
