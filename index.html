@@ -6394,10 +6394,12 @@ Flashpoint
 <script defer src="https://web.legalcdn.org/assets/LB-LB-1610/scripts/video.js"></script>
 <script defer src="https://web.legalcdn.org/assets/LB-LB-1610/js/book/not-partners-popup.js"></script>
 <script type="text/javascript">
-    $('.mobile-banner__close').on('click', function (e) {
+    $(document).ready(function () {
+        $('.mobile-banner__close').on('click', function (e) {
         e.preventDefault();
         $(this).closest('.mobile-banner__wrapper').remove();
       });
+    })
 </script>
 
 <script type="text/javascript">
