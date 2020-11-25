@@ -6608,10 +6608,11 @@ Flashpoint
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"5f6915d39ad62313","r":1,"version":"2020.11.6","si":10}'></script>
 
 <script defer type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready(function () 
+    { alert('up');
         $('.mobile-banner__close').on('click', function (e) {
         e.preventDefault();
-        alert('44');
+        alert('down');
         $(this).closest('.footer-banner__wrapper').remove();
       });
     })
