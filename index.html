@@ -6399,10 +6399,9 @@ Flashpoint
 <script type="text/javascript">
     function closeBanner(event) {
         console.log('function start');
-        
-        console.log(event);
-        console.log(event.currentTarget);
-        $(this).closest('.footer-banner__wrapper').remove();
+        console.log(event.currentTarget.parentElement);
+        $(event.currentTarget.parentElement).remove();
+        //$(this).closest(event.currentTarget.parentElement).remove();
     }
 </script>
 
