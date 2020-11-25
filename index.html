@@ -6314,7 +6314,9 @@ Flashpoint
 <!--Тип баннера: 1920х80-->
 <!--Расположение: <низ страницы>-->
 <div id="adfox_160519257102457297" class="footer-banner__wrapper">
-   <span class="mobile-banner__close"><i class="icon icon-close"></i></span>
+  <span class="mobile-banner__close">
+    <i class="icon icon-close"></i>
+  </span>
 </div>
 
 <script>
@@ -6327,6 +6329,16 @@ Flashpoint
             p2: 'gzyu'
         }
     });
+</script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.mobile-banner__close').on('click', function (e) {
+        e.preventDefault();
+        $(this).closest('.footer-banner__wrapper').remove();
+      });
+    })
 </script>
 
 <div class="to-top-side"></div>
@@ -6391,14 +6403,7 @@ Flashpoint
 <script defer src="https://web.legalcdn.org/assets/LB-BRB2432-2/js/check-ref-block.js"></script>
 <script defer src="https://web.legalcdn.org/assets/LB-LB-1610/scripts/video.js"></script>
 <script defer src="https://web.legalcdn.org/assets/LB-LB-1610/js/book/not-partners-popup.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.mobile-banner__close').on('click', function (e) {
-        e.preventDefault();
-        $(this).closest('.footer-banner__wrapper').remove();
-      });
-    })
-</script>
+
 
 <script type="text/javascript">
 	var yaMetrika = {
