@@ -4632,8 +4632,8 @@
     }),
     t.addAdfoxNamespace = function(e) {
         return e.Ya || (e.Ya = {}),
-        e.Ya.afc || (e.Ya.afc = {}),
-        e.Ya.afc
+        e.Ya.adfoxCode || (e.Ya.adfoxCode = {}),
+        e.Ya.adfoxCode
     }
     ,
     t.ns = t.addAdfoxNamespace(window);
@@ -10163,7 +10163,7 @@
     function c(e) {
         if (void 0 === e && (e = window),
         e.Ya) {
-            var t = e.Ya.afc && e.Ya.afc.pr
+            var t = e.Ya.adfoxCode && e.Ya.adfoxCode.pr
               , n = e.Ya.headerBidding && e.Ya.headerBidding.pr;
             return t || n
         }
