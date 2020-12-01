@@ -8053,8 +8053,7 @@
             _getRawUrl: function() {
                 var e;
                 e = this._useXhr ? "getBulk/v2" : "prepareCode";
-                console.log(this._domain);
-                return '/test/bulk.json';
+                //return '/test/bulk.json';
                 return "https://" + this._domain + "/" + this._ownerId + "/" + e
             },
             _getShrunkenUrl: function() {
